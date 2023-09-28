@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+</head>
+<style>
+    div.gallery {
+      border: 1px solid #ccc;
+    }
+    
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+    
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+    
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+    
+    * {
+      box-sizing: border-box;
+     
+    }
+    
+    .responsive {
+      padding: 0 6px;
+      float: left;
+      width: 24.99999%;
+    }
+   
+    
+    @media only screen and (max-width: 700px) {
+      .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+      }
+    }
+    
+    @media only screen and (max-width: 500px) {
+      .responsive {
+        width: 100%;
+      }
+    }
+    
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+
+    }
+
+    </style>
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+              
+                <li><a href="#services" class="menu-btn">Services</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#teams" class="menu-btn">Teams</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>   
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- home section start -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Rozeep Thulung</div>
+                <div class="text-3">And I'm a <span class="typing"></span></div>
+                <a href="#contact">Hire me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="images/pp.png" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">I'm Rozeep and I'm a <span class="typing-2"></span></div>
+                    <p> Rozeep is a driven IT student with an insatiable appetite for technology. His journey began with a natural curiosity about how things work, leading him to pursue a degree in Information Technology at a respected institution. Rozeep's dedication to learning is evident in his commitment to staying at the forefront of tech advancements. Beyond academics, he enthusiastically engage in hackathons and coding challenges, applying his knowledge to real-world scenarios.
+                         Rozeep's ambition is to become a tech trailblazer, contributing to the ever-evolving landscape of IT.</p>
+                    <a href="images/cv.pdf">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services section start -->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">My services</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-paint-brush"></i>
+                        <div class="text">Web Design</div>
+                        <p> Web design involves creating visually appealing and user-friendly websites.
+                             Designers focus on layout, color, typography, and navigation to provide an engaging online experience.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="text">Advertising</div>
+                        <p>Advertising is the practice of promoting products, services, or ideas to a target audience. 
+                            It uses various media channels, such as print, digital, TV, or radio, to convey persuasive messages and influence consumer behavior.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">Apps Design</div>
+                        <p>App design refers to the process of creating user interfaces for mobile applications.
+                             Designers ensure that apps are intuitive, aesthetically pleasing, and functional to enhance user engagement and satisfaction.</p>
+                    </div>
+                </div>
+               </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section>
+
+        <h2> Gallery </h2>
+        
+        
+        
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="img_5terre.jpg">
+              <img src="images/i1.jpg" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="desc"></div>
+          </div>
+        </div>
+        
+        
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="img_forest.jpg">
+              <img src="images/i2.jpg" alt="Forest" width="600" height="400">
+            </a>
+            <div class="desc"></div>
+          </div>
+        </div>
+        
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="img_lights.jpg">
+              <img src="images/i3.jpg" alt="Northern Lights" width="600" height="400">
+            </a>
+            <div class="desc"></div>
+          </div>
+        </div>
+        
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="img_mountains.jpg">
+              <img src="images/i4.jpg" alt="Mountains" width="600" height="400">
+            </a>
+            <div class="desc"></div>
+          </div>
+          
+        
+        <div class="clearfix"></div>
+        
+        <div style="padding:6px;">
+         
+        </div>
+        
+        </section>
+    <!-- skills section start -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">My skills</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">My creative skills & experiences.</div>
+                    <p>My creative journey has taken me from traditional visual arts to digital graphic design and writing. I thrive on collaboration, adapting to diverse projects and industries. 
+                        Continuous learning keeps me innovative and passionate about creative expression in all its forms.</p>
+                    <a href="#">Read more</a>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>JavaScript</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line js"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>PHP</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="line php"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>JAVA</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="line php"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>MySQL</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line mysql"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- teams section start -->
+    <section class="teams" id="teams">
+        <div class="max-width">
+            <h2 class="title">My teams</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="images/a.jpg" alt="">
+                        <div class="text">Abiral Shrestha</div>
+                        <p> Frontend Developer</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="box">
+                        <img src="images/c.jpg" alt="">
+                        <div class="text">Chandra Rai</div>
+                        <p>Backend Developer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/s.jpg" alt="">
+                        <div class="text">Susmit Chaudhary</div>
+                        <p>UI/UX Designer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/a.jpg" alt="">
+                        <div class="text">Abiral Shrestha</div>
+                        <p>Frontend Develpoer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/m.jpg" alt="">
+                        <div class="text">Mandeep Chhetri</div>
+                        <p>Digital marketing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <p>If you'd like to view my portfolio or discuss potential projects, don't hesitate to reach out.
+                         Visit my website to explore my work and find contact information. I'm excited to connect with you and explore creative opportunities together.</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Rozeep Thulung</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Kathmandu, Nepal</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">Rojip.rai.9@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form  name="contact-me">
+                        <div class="fields">
+                            <div class="field name">
+                                <input name="name" type="name" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                               
+                                <input name="email" type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input name="subject" type="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" name="message" type="message"  placeholder="Message.." required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section start -->
+    <footer>
+        <span>Created By <a href="https://www.facebook.com/rairozeep156/">Rozeep Thulung</a> | <span class="far fa-copyright"></span> 2023 All rights reserved.</span>
+    </footer>
+
+    <script src="script.js"></script>
+   
+        <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbysAFlkALtaeWKnrpKnf5ScnT0NLWH6cYhC_s9yScrSWFcf2jWCPYIjseeYD-yVuam0/exec'
+  const form = document.forms['contact-me']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        form.reset()
+       alert('Submission Successful!') 
+      })
+
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+   
+</body>
+</html>
